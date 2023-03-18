@@ -11,8 +11,8 @@ const SinglePost = ({ post: { _id, status, title, description, url } }) => (
 			status === 'LEARNED'
 				? 'success'
 				: status === 'LEARNING'
-				? 'warning'
-				: 'danger'
+					? 'warning'
+					: 'danger'
 		}
 	>
 		<Card.Body>
@@ -26,16 +26,16 @@ const SinglePost = ({ post: { _id, status, title, description, url } }) => (
 								status === 'LEARNED'
 									? 'success'
 									: status === 'LEARNING'
-									? 'warning'
-									: 'danger'
+										? 'warning'
+										: 'danger'
 							}
 						>
 							{status}
 						</Badge>
 					</Col>
-					<Col className='text-right'>
+					{/* <Col className='text-right'>
 						<ActionButtons url={url} _id={_id} />
-					</Col>
+					</Col> */}
 				</Row>
 			</Card.Title>
 			<Card.Text>{description}</Card.Text>
